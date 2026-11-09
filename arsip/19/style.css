@@ -1,0 +1,222 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('ulangtahun1.jpg'); /* Ganti 'ulangtahun-background.jpg' dengan URL gambar latar belakang ulang tahun */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  background-image: url('ulangtahun.jpg'); /* Ganti 'ulangtahun.jpg' dengan URL gambar ulang tahun */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* Warna teks header */
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek teks 3D */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; /* Gunakan font yang romantis */
+    color: white;
+}
+
+
+.main-border {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-frame {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+    border: 5px solid #ff6b6b; /* Warna border yang serasi dengan header */
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.photo-frame {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 5px solid #ff6b6b; /* Warna border yang serasi dengan header */
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-frame img {
+    width: 100%;
+    border-radius: 50%; /* Untuk membuat gambar berbentuk lingkaran */
+}
+
+.photo-frame p {
+    font-style: italic;
+    color: #ff6b6b;
+    margin-top: 10px;
+}
+
+/* ... (Kode CSS yang ada sebelumnya) ... */
+
+.heart-icon {
+    font-size: 80px; /* Sesuaikan ukuran ikon hati sesuai kebutuhan Anda */
+    color: rgba(244, 71, 71, 0.827); /* Warna ikon hati */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-heart {
+    left: 0;
+}
+
+.right-heart {
+    right: 0;
+}
+
+/* Kode CSS yang sudah ada sebelumnya tetap sama */
+
+/* Kode CSS yang sudah ada sebelumnya tetap sama */
+
+.wishes-text {
+  font-family: 'Your Modern Font', sans-serif; /* Gantilah 'Your Modern Font' dengan nama font modern yang Anda unduh */
+  font-size: 16px; /* Ukuran teks ucapan */
+  color: #ff6b6b; /* Warna teks ucapan yang sesuai dengan tampilan website */
+  text-align: center; /* Pusatkan teks di bawah */
+  padding: 20px;
+}
+
+/* CSS untuk tampilan stylish ikon audio */
+audio {
+  background-color: #ff6b6b;
+  color: rgb(230, 211, 211);
+  padding: 5px;
+}
+
+
+
+/* Kode CSS yang sudah ada sebelumnya tetap sama */
+
+/* CSS untuk efek salju */
+.snowflakes-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  background: url('salju.png') no-repeat;
+  width: 20px; /* Ukuran gambar salju */
+  height: 20px;
+  animation: falling 5s linear infinite; /* Animasi jatuh dengan durasi 5 detik */
+}
+
+@keyframes falling {
+  0% {
+      transform: translateY(-10%);
+  }
+  100% {
+      transform: translateY(100vh); /* Biarkan salju jatuh hingga mencapai tinggi viewport */
+  }
+}
+
+.main-border {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-border:hover {
+  transform: perspective(1000px) rotateX(10deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-frame {
+  transition: transform 0.3s;
+}
+
+.main-frame:hover {
+  transform: translateY(5px);
+}
+
+/* CSS untuk efek 3D saat kursor diarahkan ke border (selain main border) */
+.photo-frame {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-frame:hover {
+  transform: perspective(1000px) rotateX(10deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS untuk efek menyala pada teks "bottom wishes" */
+.bottom-wish {
+  font-family: 'Agbalumo', cursive;
+  background-color: #ff6b6b; /* Warna latar belakang wishes */
+  text-align: center;
+  padding: 20px;
+  border: 2px solid rgb(247, 97, 209); /* Warna dan style border yang sama dengan border foto */
+}
+
+.wishes-text {
+  font-family: 'Agbalumo', cursive;
+  font-size: 24px;
+  color: #f6e9e9; /* Warna teks wishes */
+  margin: 10px 0;
+  padding: 10px;
+}
+
+
+@keyframes neon {
+  0% {
+      color: #800341; /* Warna pertama */
+  }
+  50% {
+      color: #9c0505; /* Warna kedua */
+  }
+  100% {
+      color: #74033b; /* Kembali ke warna pertama */
+  }
+}
+
+/* CSS */
+.header-text {
+  font-size: 36px; /* Sesuaikan dengan ukuran teks yang Anda inginkan */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan teks */
+}
+
+
+.header::before {
+  content: "🎉"; /* Gunakan karakter Unicode atau emoji yang sesuai */
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Mengatur di bawah konten header */
+  color: #ffcc00; /* Warna dekorasi */
+}
+
